@@ -61,9 +61,9 @@
   
   
   <entry>
-    <title>算法学习导航</title>
-    <link href="/2024/01/10/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/"/>
-    <url>/2024/01/10/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/</url>
+    <title>人工智能学习导航</title>
+    <link href="/2024/01/10/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/"/>
+    <url>/2024/01/10/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/</url>
     
     <content type="html"><![CDATA[<h1 id="1，机器学习算法python实现"><a href="#1，机器学习算法python实现" class="headerlink" title="1，机器学习算法python实现"></a>1，<a href="https://github.com/lawlite19/MachineLearning_Python?tab=readme-ov-file">机器学习算法python实现</a></h1><p>GitHub项目，讲解了机器学习算法的数学原理与python实现，做笔记必备。</p><h1 id="2，Hello算法"><a href="#2，Hello算法" class="headerlink" title="2，Hello算法"></a>2，<a href="https://www.hello-algo.com/">Hello算法</a></h1><p>数据结构类的算法的多方式实现，有c，python，c++等等，同时配备了可视化界面，形象讲解算法的原理与区别。</p><h1 id="3，可视化数据结构与算法"><a href="#3，可视化数据结构与算法" class="headerlink" title="3，可视化数据结构与算法"></a>3，<a href="https://visualgo.net/zh">可视化数据结构与算法</a></h1><p>一个单纯模拟数据结构算法的网站。</p><h1 id="4，菜鸟教程"><a href="#4，菜鸟教程" class="headerlink" title="4，菜鸟教程"></a>4，<a href="https://www.runoob.com/">菜鸟教程</a></h1><p>学计算机必备，各种语言与第三方库的讲解以及框架，数不胜数！</p><h1 id="5，神经网络与深度学习"><a href="#5，神经网络与深度学习" class="headerlink" title="5，神经网络与深度学习"></a>5，<a href="https://nndl.github.io/nndl-book.pdf">神经网络与深度学习</a></h1><p><strong>邱锡鹏</strong>教授出版，详细功能见网址上级GitHub仓库，具有以下特点：</p><p><strong>系统性</strong>：系统地整理了神经网络和深度学习的知识体系。鉴于深度学习涉及的知识点较多，本书从机器学习的基本概念、神经网络模型以及概率图模型三个层面来串联深度学习所涉及的知识点，使读者对深度学习技术的理解更具系统性、条理性和全面性。<br><strong>可读性</strong>：本书在编排上由浅入深，在语言表达上力求通俗易懂，并通过增加图例、示例以及必要的数学推导来理解抽象的概念。同时，附录简要介绍了本书所涉及的必要数学知识，便于读者查用。<br><strong>实践性</strong>：本书在网站上配套了针对每章知识点的编程练习，使得读者在学习过程中可以将理论和实践密切结合，加深对知识点的理解，并具备分析问题和解决问题的能力。</p><h1 id="6，小林coding"><a href="#6，小林coding" class="headerlink" title="6，小林coding"></a>6，<a href="https://xiaolincoding.com/">小林coding</a></h1><p>图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！</p>]]></content>
     
