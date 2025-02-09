@@ -208,20 +208,6 @@
   </url>
 
   
-  <url>
-    <loc>https://jimes.cn/tags/blog/</loc>
-    <lastmod>2025-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimes.cn/tags/hexo/</loc>
-    <lastmod>2025-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -232,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://jimes.cn/categories/%E8%80%83%E7%A0%94408/</loc>
+    <loc>https://jimes.cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</loc>
     <lastmod>2025-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -246,14 +232,7 @@
   </url>
   
   <url>
-    <loc>https://jimes.cn/categories/%E6%B8%B8%E6%88%8F-%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2025-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimes.cn/categories/%E6%B8%B8%E6%88%8F-%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <loc>https://jimes.cn/categories/%E8%80%83%E7%A0%94/</loc>
     <lastmod>2025-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -268,34 +247,6 @@
   
   <url>
     <loc>https://jimes.cn/categories/%E6%B8%B8%E6%88%8F/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2025-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimes.cn/categories/WEB%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2025-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimes.cn/categories/WEB%E5%BC%80%E5%8F%91/%E7%AC%AC%E4%BA%8C%E7%B1%BB/</loc>
-    <lastmod>2025-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimes.cn/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</loc>
-    <lastmod>2025-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimes.cn/categories/%E8%80%83%E7%A0%94/</loc>
     <lastmod>2025-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
