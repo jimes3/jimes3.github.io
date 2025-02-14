@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jimes.cn/2025/01/19/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%EF%BC%88%E5%B8%A6%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%EF%BC%89/</loc>
+    
+    <lastmod>2025-02-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jimes.cn/2025/02/14/GNN/</loc>
     
     <lastmod>2025-02-14</lastmod>
@@ -66,15 +75,6 @@
   
   <url>
     <loc>https://jimes.cn/2025/01/22/transformer/</loc>
-    
-    <lastmod>2025-01-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimes.cn/2025/01/19/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%EF%BC%88%E5%B8%A6%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%EF%BC%89/</loc>
     
     <lastmod>2025-01-25</lastmod>
     
