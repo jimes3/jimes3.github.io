@@ -23,7 +23,7 @@
   
   
   <entry>
-    <title>循环神经网络</title>
+    <title>从RNN到LSTM（包含代码实现）</title>
     <link href="/2025/02/08/RNN/"/>
     <url>/2025/02/08/RNN/</url>
     
@@ -118,7 +118,7 @@
   
   
   <entry>
-    <title>卷积神经网络（CNN）</title>
+    <title>卷积神经网络（CNN，包含代码实现）</title>
     <link href="/2025/01/21/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     <url>/2025/01/21/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</url>
     
