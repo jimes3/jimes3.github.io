@@ -38,10 +38,20 @@ form.addEventListener('submit', async event => {
   status.dataset.error = 'false';
   status.textContent = '正在把这封小信，轻轻展开……';
   let phase = 'loading';
+  let preparedAudio = null;
+  let opened = false;
   try {
     if (!window.crypto || !window.crypto.subtle) {
       status.textContent = '请用 HTTPS 链接打开，让这封信安心送达。';
       return;
+    }
+    // Resume during the unlock gesture; keep silent until the password succeeds.
+    const Audio = window.AudioContext || window.webkitAudioContext;
+    if (Audio) {
+      try {
+        preparedAudio = new Audio();
+        preparedAudio.resume().catch(() => {});
+      } catch (_) { /* Audio is optional; unlocking should always remain available. */ }
     }
     const response = await fetch('./content.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Content unavailable');
@@ -60,7 +70,9 @@ form.addEventListener('submit', async event => {
     window.scrollTo(0, 0);
     const script = document.createElement('script');
     script.textContent = content.script;
+    window.sunnyLetterAudio = preparedAudio;
     document.body.append(script);
+    opened = true;
     const heading = document.getElementById('hero-title');
     heading.setAttribute('tabindex', '-1');
     heading.focus({ preventScroll: true });
@@ -75,6 +87,7 @@ form.addEventListener('submit', async event => {
       status.textContent = '信还在路上，检查一下网络，再轻轻敲门。';
     }
   } finally {
+    if (!opened && preparedAudio) preparedAudio.close().catch(() => {});
     busy = false;
     unlock.disabled = false;
   }
