@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="一些小小的心意，和想与你一起度过的日常。">
+  <title>把以后的晴天，分你一半</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./story.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a href="#home" aria-label="回到开头">给你的小小宇宙<span class="brand-star">✳</span></a><button id="sound" class="sound" type="button" aria-pressed="false" aria-label="开启轻柔旋律"><span class="sound-bars"><i></i><i></i><i></i></span><span id="sound-label">听听晴天</span></button></header>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="eyebrow"><span></span> A LITTLE LETTER, JUST FOR YOU</div>
+      <p class="handwritten hero-note">有些期待，是从遇见你开始的。</p>
+      <h1 id="hero-title">把以后的晴天，<br>分你<span class="underlined">一半<svg viewBox="0 0 150 15" aria-hidden="true"><path d="M4 10Q70 0 145 8M17 14Q70 7 130 12"/></svg></span><span class="title-dot">。</span></h1>
+      <p class="hero-intro">这里藏着一点点心意，<br>还有一些，想和你一起实现的小事。</p>
+      <div class="hero-art" aria-hidden="true">
+        <span class="art-spark spark-one">✧</span><span class="art-spark spark-two">✳</span>
+        <svg viewBox="0 0 560 340" class="landscape"><defs><pattern id="paper-lines" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#e3dbc9" stroke-width=".5"/></pattern></defs>
+          <circle cx="283" cy="145" r="118" fill="#eee9dc"/><circle class="sun" cx="392" cy="82" r="32" fill="#e9bc72"/>
+          <g class="cloud"><path d="M98 88c-20 0-23-25-2-30 4-24 41-27 52-5 24-8 42 23 19 35Z" fill="#fffdf7" stroke="#ded9cb" stroke-width="1.5"/></g>
+          <path d="M26 278Q133 178 280 254Q407 185 538 264L538 320H26Z" fill="#dce2cd"/><path d="M35 309Q242 226 525 295" fill="none" stroke="#f5f0df" stroke-width="34"/>
+          <g class="house"><path d="M333 191V263H417V191L375 160Z" fill="#f7efdf" stroke="#747d66" stroke-width="2"/><path d="M321 194L375 151L429 194" fill="none" stroke="#747d66" stroke-width="5" stroke-linecap="round"/><path d="M366 263V226H388V263" fill="#a5b49a"/><rect x="344" y="204" width="14" height="17" rx="2" fill="#e8c687"/><path d="M351 204V221M344 212H358" stroke="#fff8e8" stroke-width="2"/></g>
+          <g class="person person-one"><path d="M205 244l-6 43m27-43 9 43" stroke="#626759" stroke-width="8" stroke-linecap="round"/><path d="M197 202Q211 193 227 204l8 44h-45Z" fill="#85977d"/><circle cx="212" cy="184" r="17" fill="#edc9ab"/><path d="M196 183q-1-26 26-16l8 15q-11-11-28-1Z" fill="#575649"/><path d="M228 210l22 20" stroke="#85977d" stroke-width="10" stroke-linecap="round"/></g>
+          <g class="person person-two"><path d="M267 248l-4 39m21-39 5 39" stroke="#626759" stroke-width="7" stroke-linecap="round"/><path d="M266 203q10-7 20 0l15 48h-46Z" fill="#ce987f"/><path d="M259 190q-2-36 23-30 21 6 11 42l-10-7Z" fill="#615b4c"/><circle cx="276" cy="183" r="15" fill="#edc9ab"/><path d="M261 179q3-29 25-12l7 15q-14-2-21-14-2 11-11 11Z" fill="#615b4c"/><path d="M267 211l-17 19" stroke="#ce987f" stroke-width="10" stroke-linecap="round"/></g>
+          <path d="M245 163c-20-13-7-24 1-13 9-14 23 0-1 13" fill="#c78c78" class="floating-heart"/>
+          <g fill="none" stroke="#8f9c77" stroke-width="2" stroke-linecap="round"><path d="M104 282v-23m0 10q-17 0-15-12 13 0 15 12m0 6q16 0 16-12-12-1-16 12M452 284v-31m0 15q-15-2-14-13 13 0 14 13m0 7q17-2 16-14-14 1-16 14"/></g>
+          <g fill="#d8af70"><circle cx="104" cy="253" r="6"/><circle cx="452" cy="248" r="6"/></g><path d="M165 301q9-5 17 0m151-13q8-6 15-1" stroke="#a3ab8e" stroke-width="2" fill="none"/>
+        </svg>
+        <span class="art-caption handwritten">两个人，慢慢走。天气刚刚好。</span>
+      </div>
+      <button class="primary" id="open-letter" type="button">拆开这封小小的信 <span>↗</span></button>
+      <a class="scroll-cue" href="#little-things">往下翻，还有一些悄悄话 <span>↓</span></a>
+      <div class="letter" id="letter" hidden><div class="letter-paper"><span class="eyebrow">DEAR YOU</span><h2>很高兴，遇见你。</h2><p>还没有攒下很多故事，<br>却已经开始期待下一次见面。</p><p>所以做了这个小小的地方，<br>收好此刻的心情，<br>也给以后的我们，留一点空白。</p><p class="handwritten signature">一切都可以慢慢来 ♡</p><button class="text-button" id="close-letter" type="button">把信收好 ↓</button></div></div>
+    </section>
+
+    <section class="chapter stars-chapter" id="little-things" aria-labelledby="stars-title">
+      <div class="section-top"><span class="eyebrow">01 / LITTLE THINGS</span><span class="tiny-flower">✳</span></div>
+      <h2 id="stars-title">有些小事，<br>想悄悄收藏。</h2><p class="section-description">轻轻点亮星星，看看藏起来的心情。</p>
+      <div class="star-field"><svg class="constellation" viewBox="0 0 340 170" aria-hidden="true"><path d="M55 97L168 47L282 109"/></svg><button class="star-button" data-note="0" aria-label="点亮第一颗星星" aria-pressed="false"><span>✧</span><small>初见</small></button><button class="star-button" data-note="1" aria-label="点亮第二颗星星" aria-pressed="false"><span>✧</span><small>心动</small></button><button class="star-button" data-note="2" aria-label="点亮第三颗星星" aria-pressed="false"><span>✧</span><small>期待</small></button></div>
+      <p class="star-note" id="star-note" aria-live="polite">有些相遇，让平常的一天有了名字。</p><p class="small-note" id="star-count">还有 3 颗小心情，等你发现</p>
+    </section>
+
+    <section class="chapter everyday" aria-labelledby="everyday-title"><div class="section-top"><span class="eyebrow">02 / ORDINARY DAYS</span><span class="tiny-flower">❋</span></div><h2 id="everyday-title">比起很远的以后，<br>先想和你过好今天。</h2><p class="section-description">那些普普通通的日常，因为有你，<br>好像也值得期待。</p>
+      <div class="evening-scene" aria-hidden="true"><svg viewBox="0 0 460 270"><rect width="460" height="270" rx="150" fill="#e8ecdf"/><circle cx="337" cy="64" r="28" fill="#f5e2ad"/><path d="M0 214Q150 172 460 214V270H0" fill="#c9d2bb"/><path d="M68 236Q240 202 396 235" fill="none" stroke="#f1ecda" stroke-width="22"/><path d="M111 215V85q0-20 20-20h19" fill="none" stroke="#6d7861" stroke-width="5"/><path d="M132 83l8-21h19l8 21Z" fill="#78826a"/><ellipse class="lamp-glow" cx="150" cy="93" rx="36" ry="30" fill="#ffe3a0" opacity=".45"/><path d="M187 175l-5 43m26-43 8 43" stroke="#626759" stroke-width="7" stroke-linecap="round"/><path d="M180 139h30l9 41h-47Z" fill="#85977d"/><circle cx="195" cy="122" r="16" fill="#edc9ab"/><path d="M180 120q0-25 25-14l8 14Z" fill="#575649"/><path d="M209 148l22 16m11-16-11 16" stroke="#b8a184" stroke-width="8" stroke-linecap="round"/><path d="M242 177l-3 41m22-41 6 41" stroke="#626759" stroke-width="7" stroke-linecap="round"/><path d="M232 130q-2-29 22-25 20 3 14 37Z" fill="#615b4c"/><circle cx="249" cy="122" r="14" fill="#edc9ab"/><path d="M234 117q4-23 22-10l9 13q-14-1-20-12Z" fill="#615b4c"/><path d="M239 140h21l15 43h-48Z" fill="#ce987f"/><path d="M314 219v-15q-15-5-17 5l3 10m14-14q22-10 24 7l-6 7h-30m34-9q17 0 12-12" fill="#f9f4e7" stroke="#8e927d" stroke-width="2"/><path d="M298 206l-1-7 7 4m23-1 5-5 1 11" fill="#f9f4e7" stroke="#8e927d" stroke-width="2"/><g fill="#fffdf3"><circle cx="57" cy="66" r="2"/><circle cx="288" cy="32" r="2"/><circle cx="392" cy="132" r="2"/></g></svg></div>
+      <div class="daily-lines"><p><span>01</span>吃完晚饭，一起绕一点远路。</p><p><span>02</span>路过小店，分着吃一份热乎乎的点心。</p><p><span>03</span>把有趣的事，留到见面时讲给你听。</p></div><p class="handwritten scene-caption">连晚风都想，顺路送你回家。</p>
+    </section>
+
+    <section class="chapter wishes" aria-labelledby="wishes-title"><div class="section-top"><span class="eyebrow">03 / SOMEDAY, WITH YOU</span><span class="tiny-flower">✧</span></div><h2 id="wishes-title">如果可以，<br>想和你一起……</h2><p class="section-description">不赶着实现，先把这些小愿望存起来。</p><div class="wish-tabs" role="group" aria-label="选择未来的小愿望"><button type="button" class="active" data-wish="sea" aria-pressed="true">去看海</button><button type="button" data-wish="rain" aria-pressed="false">听场雨</button><button type="button" data-wish="winter" aria-pressed="false">过冬天</button></div>
+      <div class="wish-card" id="wish-card" data-scene="sea"><div class="wish-art" aria-hidden="true"><div class="wish-sun"></div><div class="rain-lines"></div><div class="ocean ocean-back"></div><div class="ocean ocean-front"></div><div class="little-boat">⏝</div><div class="window-frame"></div><div class="snow snow-one">✳</div><div class="snow snow-two">❋</div><div class="mug mug-one"></div><div class="mug mug-two"></div></div><div class="wish-copy" aria-live="polite"><span class="eyebrow" id="wish-label">WISH NO. 01</span><h3 id="wish-title">去海边，浪费一个下午。</h3><p id="wish-description">不必追赶日落。吹吹风，踩踩水，<br>再把口袋里最好看的贝壳送给你。</p></div></div><p class="small-note">三个小愿望，和很多还没写下的以后。</p>
+    </section>
+
+    <section class="chapter garden" aria-labelledby="garden-title"><span class="eyebrow">04 / TO BE CONTINUED</span><h2 id="garden-title">故事才刚刚开始。</h2><p class="section-description">不用一下子说完所有的喜欢。<br>先种下一点期待，让它慢慢长大。</p><button id="plant" class="plant-button" type="button" aria-label="种下一朵小花"><svg viewBox="0 0 200 200" aria-hidden="true"><ellipse cx="100" cy="169" rx="55" ry="9" fill="#e4dece"/><g class="seed"><ellipse cx="100" cy="155" rx="7" ry="10" fill="#a98965" transform="rotate(25 100 155)"/><path d="M99 161l3-12" stroke="#e4cfac" fill="none"/></g><g class="grown-flower"><path d="M100 165V86" stroke="#83966e" stroke-width="5" fill="none"/><path d="M98 139q-36 2-34-24 27-3 34 24m4-14q35 1 33-25-28-1-33 25" fill="#a7b68f"/><g class="flower-head" fill="#e5b583"><ellipse cx="100" cy="66" rx="13" ry="22"/><ellipse cx="100" cy="66" rx="13" ry="22" transform="rotate(60 100 86)"/><ellipse cx="100" cy="66" rx="13" ry="22" transform="rotate(120 100 86)"/><ellipse cx="100" cy="66" rx="13" ry="22" transform="rotate(180 100 86)"/><ellipse cx="100" cy="66" rx="13" ry="22" transform="rotate(240 100 86)"/><ellipse cx="100" cy="66" rx="13" ry="22" transform="rotate(300 100 86)"/><circle cx="100" cy="86" r="13" fill="#b88a53"/></g></g></svg><span id="plant-label">轻点一下，种下我们的第一朵花</span></button><p id="garden-message" class="handwritten" aria-live="polite">以后路过这里，记得来看看它。</p><div class="ending-divider">✳</div><p class="ending">先写到这里。<br>剩下的，想和你慢慢经历。</p><span class="handwritten end-heart">♡</span></section>
+  </main>
+  <footer><span>MADE WITH A LITTLE COURAGE & A LOT OF WARMTH</span><p>这份小小的晴天，只想送给你。</p><a href="#home">回到故事开头 ↑</a></footer>
+<script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>

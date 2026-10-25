@@ -1,11 +1,9 @@
 /**
  * Canvas 粒子动画 - requestAnimationFrame 轮询等待 canvas 出现
- * 不依赖任何事件/定时器，帧对齐，不影响 HBE 解密流程
  */
 (function() {
   'use strict';
 
-  // 粒子动画核心
   function start(canvas) {
     var ctx = canvas.getContext('2d');
     canvas.width = 900;
@@ -72,7 +70,6 @@
         ctx.fill();
       }
 
-      // 连线
       ctx.lineWidth = 0.6;
       for (var i = 0; i < particles.length; i++) {
         for (var j = i + 1; j < particles.length; j++) {
@@ -93,13 +90,14 @@
     })();
   }
 
-  // 使用 requestAnimationFrame 轮询等待 canvas 出现（非加密页直接找到，加密页等解密后自动出现）
+  // 双重轮询：requestAnimationFrame（帧对齐）+ setTimeout 兜底
   (function poll() {
     var canvas = document.getElementById('particleCanvas');
     if (canvas) {
       start(canvas);
     } else {
       requestAnimationFrame(poll);
+      setTimeout(poll, 200);
     }
   })();
 })();
