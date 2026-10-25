@@ -1,8 +1,14 @@
 /**
- * Canvas 粒子动画 - requestAnimationFrame 轮询等待 canvas 出现
+ * Canvas 粒子动画
  */
 (function() {
   'use strict';
+
+  // DEBUG: mark that script ran
+  var _dbg = document.createElement('div');
+  _dbg.id = 'particle_script_ran';
+  _dbg.style.cssText = 'display:none';
+  document.body ? document.body.appendChild(_dbg) : document.addEventListener('DOMContentLoaded', function(){document.body.appendChild(_dbg)});
 
   function start(canvas) {
     var ctx = canvas.getContext('2d');
@@ -90,7 +96,7 @@
     })();
   }
 
-  // 双重轮询：requestAnimationFrame（帧对齐）+ setTimeout 兜底
+  // 轮询等待 canvas 出现（双重保障：requestAnimationFrame + setTimeout）
   (function poll() {
     var canvas = document.getElementById('particleCanvas');
     if (canvas) {
