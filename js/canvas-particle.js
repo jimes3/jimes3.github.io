@@ -1,6 +1,5 @@
 /**
- * Canvas 粒子动画 - 最小化测试版
- * 仅依赖 MutationObserver 检测 canvas 出现
+ * Canvas 粒子动画 - 轮询 + 延时双重保障
  */
 (function() {
   'use strict';
@@ -10,11 +9,6 @@
     var ctx = c.getContext('2d');
     c.width = 900; c.height = 400;
     
-    // 先画一个测试矩形确认 canvas 正常工作
-    ctx.fillStyle = '#2f4154';
-    ctx.fillRect(0, 0, 900, 400);
-    
-    // 画粒子
     var pts = [];
     for (var i = 0; i < 120; i++) {
       pts.push({
@@ -55,7 +49,6 @@
         ctx.fillStyle = 'hsl(' + p.hue + ',70%,60%)';
         ctx.fill();
       }
-      // 连线
       ctx.lineWidth = 0.6;
       for (var i = 0; i < pts.length; i++) {
         for (var j = i+1; j < pts.length; j++) {
@@ -72,26 +65,26 @@
       }
       requestAnimationFrame(anim);
     }
-    
     anim();
   }
   
-  // MutationObserver
+  // 立即检查
   if (document.getElementById('particleCanvas')) { start(); }
   else {
-    var obs = new MutationObserver(function() {
-      if (document.getElementById('particleCanvas')) {
-        obs.disconnect();
-        start();
-      }
-    });
-    obs.observe(document.body, { childList: true, subtree: true });
-    // 轮询兜底
+    // 轮询 15 秒
+    var tries = 0;
     var iv = setInterval(function() {
+      tries++;
       if (document.getElementById('particleCanvas')) {
         clearInterval(iv);
         start();
+      } else if (tries > 75) {
+        clearInterval(iv);
       }
     }, 200);
+    // 2 秒后也尝试一次（兜底浏览器节流）
+    setTimeout(function() {
+      if (document.getElementById('particleCanvas')) start();
+    }, 2000);
   }
 })();
