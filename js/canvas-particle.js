@@ -1,6 +1,6 @@
 /**
  * Canvas 粒子动画 - 加密文章解密后自动启动
- * 通过 Fluid theme 的 custom_js 配置加载
+ * 通过 MutationObserver 检测 canvas 出现（不依赖 HBE 事件）
  */
 (function() {
   'use strict';
@@ -55,7 +55,6 @@
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
 
-        // 鼠标排斥
         const dx = p.x - mouseX;
         const dy = p.y - mouseY;
         const dist = Math.sqrt(dx * dx + dy * dy);
@@ -114,14 +113,37 @@
     return true;
   }
 
-  // 页面加载时尝试初始化（未加密的普通文章）
+  // ===== 启动策略：四种兜底 =====
+
+  // 1. 立即检查（非加密文章直出）
   if (document.getElementById(CANVAS_ID)) {
     initParticleAnimation();
   }
 
-  // 监听 HBE 解密完成事件（加密文章）
+  // 2. HBE 解密事件
   window.addEventListener('hexo-blog-decrypt', function() {
-    // 等待一帧确保 DOM 已更新
     requestAnimationFrame(initParticleAnimation);
   });
+
+  // 3. MutationObserver（最可靠：监控 DOM 变化，canvas 一出现就启动）
+  var observer = new MutationObserver(function(mutations) {
+    if (document.getElementById(CANVAS_ID)) {
+      observer.disconnect();
+      requestAnimationFrame(initParticleAnimation);
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  // 4. 轮询兜底（5 秒内每 200ms 检查一次）
+  var pollCount = 0;
+  var pollTimer = setInterval(function() {
+    pollCount++;
+    if (document.getElementById(CANVAS_ID)) {
+      clearInterval(pollTimer);
+      initParticleAnimation();
+    } else if (pollCount > 25) {
+      clearInterval(pollTimer); // 5 秒后停止轮询
+    }
+  }, 200);
+
 })();
